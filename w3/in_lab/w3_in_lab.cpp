@@ -30,7 +30,7 @@ int main()
     cin.ignore();
     
     // allocate dynamic memory for weatherArray here
-	weatherArray = new Weather[n];
+    weatherArray = new Weather[n];
     for(i = 0; i < n; i++)
     {
         char dateDescription[7];
@@ -42,7 +42,7 @@ int main()
         // for each object of weatherArray
 
 
-		weatherArray[i].setData(dateDescription, low, high);
+				weatherArray[i].setData(dateDescription, low, high);
 
     }
     
@@ -53,7 +53,7 @@ int main()
     
     for(i = 0; i < n; i++)
     {
-        weatherArray[i].display();
+       	weatherArray[i].display();
     }
     
     // deallocate dynamic memory here
