@@ -21,7 +21,7 @@ int main()
     int n; // number of objects in Weather array
     
     // declare a pointer named weatherArray of type Weather here
-	  Weather* weatherArray = nullptr;
+    Weather* weatherArray = nullptr;
 
     cout << "Weather Data" << endl
     << "=====================" << endl
