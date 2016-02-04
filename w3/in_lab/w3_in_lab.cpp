@@ -40,9 +40,8 @@ int main()
         // add code to accept the user input
         // for the weather array and set the data
         // for each object of weatherArray
-
-
-				weatherArray[i].setData(dateDescription, low, high);
+        
+        weatherArray[i].setData(dateDescription, low, high);
 
     }
     
@@ -57,7 +56,7 @@ int main()
     }
     
     // deallocate dynamic memory here
-	delete[] weatherArray;
-	weatherArray = nullptr;
+    delete[] weatherArray;
+    weatherArray = nullptr;
     return 0;
 }
