@@ -11,7 +11,6 @@
 /////////////////////////////////////////////////////
 
 #include <iostream>
-#include<conio.h>
 #include "Weather.h"
 using namespace std;
 using namespace sict;
@@ -22,7 +21,7 @@ int main()
     int n; // number of objects in Weather array
     
     // declare a pointer named weatherArray of type Weather here
-	Weather* weatherArray = nullptr;
+    Weather* weatherArray = nullptr;
 
     cout << "Weather Data" << endl
     << "=====================" << endl
@@ -31,7 +30,7 @@ int main()
     cin.ignore();
     
     // allocate dynamic memory for weatherArray here
-	weatherArray = new Weather[n];
+    weatherArray = new Weather[n];
     for(i = 0; i < n; i++)
     {
         char dateDescription[7];
@@ -41,15 +40,14 @@ int main()
         // add code to accept the user input
         // for the weather array and set the data
         // for each object of weatherArray
-		
-		cout << "Enter date: ";
-		cin >> dateDescription[i];
-		cout << "Enter high: ";
-		cin >> high;
-		cout << "Enter low: ";
-		cin >> low;
-
-		weatherArray[i].setData(dateDescription, low, high);
+        cout << "Enter date: ";
+        cin >> dateDescription[i];
+        cout << "Enter high: ";
+        cin >> high;
+        cout << "Enter low: ";
+        cin >> low;
+        
+        weatherArray[i].setData(dateDescription, low, high);
 
     }
     
@@ -60,14 +58,14 @@ int main()
     
     for(i = 0; i < n; i++)
     {
-        weatherArray[i].display();
+    	weatherArray[i].display();
     }
     
     // deallocate dynamic memory here
-	delete[] weatherArray;
-	weatherArray = nullptr;
+    delete[] weatherArray;
+    weatherArray = nullptr;
 
 
-	getch();
+
     return 0;
 }
