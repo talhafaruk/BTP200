@@ -10,7 +10,7 @@ namespace sict
     
 	void Weather::setData(const char* date, double low, double high)
 	{
-		strncpy(name, date, MAX_DATE);
+	     strncpy(name, date, MAX_DATE);
 		highTemp = high;
 		lowTemp = low;
 	}
